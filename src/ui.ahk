@@ -1,11 +1,12 @@
 #Include common.ahk
 
+global main := Gui(, '暗黑4按键辅助')
+edit_skill1 := main.AddEdit('', '技能1')
+edit_skill2 := main.AddEdit('ys', '技能2')
+edit_skill3 := main.AddEdit('ys', '技能3')
+edit_skill4 := main.AddEdit('ys', '技能4')
+
+
 run_ui() {
-    main := Gui(, '暗黑4按键辅助')
-
-    confirm := main.Add("Button", "w120 h30", '保存')
-    confirm.SetFont('s15')
-    main.Add("Edit", "w300")
-
-    main.Show("AutoSize Center")
+    main.Show("AutoSize Center w450")
 }
